@@ -3,19 +3,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
+import ErrorBoundary from "./ErrorBoundary";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import ThemeProvider from "./context/ThemeProvider";
 
 ReactDOM.render(
-  // <ErrorBoundary>
-  <ThemeProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ThemeProvider>,
-  // </ErrorBoundary>,
+  <ErrorBoundary>
+    <ThemeProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ThemeProvider>
+  </ErrorBoundary>,
   document.getElementById("root")
 );
 
