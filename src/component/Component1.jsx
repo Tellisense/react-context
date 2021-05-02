@@ -3,7 +3,7 @@ import React from 'react'
 const Component1 = () => {
   return (
     <div style={{ padding: 100 }}>
-      Component1
+      new UI Component1
     </div>
   )
 }
