@@ -7,7 +7,7 @@ const Container = ({ children }) => {
 
   const handleClick = () => {
     themeContext.changeTheme()
-    throw new Error()
+    throw new Error('I crashed!');
   }
 
   const themeStyle = themeContext.theme ? { height: '100vh', backgroundColor: 'black', color: 'white' } : { backgroundColor: 'white', color: 'black' }
